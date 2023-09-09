@@ -1,29 +1,22 @@
-# Butano template
+# My GB songs
 
-GBA gamedev template for [Butano engine](https://github.com/GValiente/butano).
+copyrat90's GB songs.
 
-This template is meant to be used on [VSCode](https://code.visualstudio.com/), with [Native Debug](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) extension.
-
-
-## Changing paths
-
-You need to change some paths in this template so that they suit your environment.
-
-1. Change `LIBBUTANO :=` on [Makefile](Makefile#L30) to your location for Butano.
+See [dmg_audio/](dmg_audio/) directory for the songs.
 
 
-## Finding include paths with C/C++ extension
+## Build .gba
 
-[See this gist.](https://gist.github.com/copyrat90/eee49d92846ca3585a69d5bea001710d)
+This project relies on [Butano engine](https://github.com/GValiente/butano), which is a modern C++ high level engine for the GBA.
+
+To build .gba ROM, you need to install all dependencies of Butano.\
+See [Getting Started on Butano](https://gvaliente.github.io/butano/getting_started.html).
+
+After that, you can simply recursive-clone this repo, and run `make`.
 
 
-## Setting up debugger
+## Licenses
 
-[launch.json](launch.json) and [tasks.json](tasks.json) are provided to easily debug your game with [mGBA](https://mgba.io/).
+Source code is licensed under the 0BSD.
 
-1. Add `mgba` and `devkitARM/bin/arm-none-eabi-gdb` executables to your `PATH`.
-2. Install [Native Debug extension](https://marketplace.visualstudio.com/items?itemName=webfreak.debug) on VSCode.
-3. Settings done; Hit F5 on VSCode to debug.
-
-Optionally, add `-Og` to `USERFLAGS` on Makefile to improve debugging.\
-Don't forget to remove `-Og` before your actual release!
+GB songs are in different licenses, see [song-licenses.md](song-licenses.md) for details.
