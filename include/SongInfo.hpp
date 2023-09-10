@@ -1,5 +1,6 @@
 #pragma once
 
+#include <bn_array.h>
 #include <bn_string_view.h>
 
 namespace bn
@@ -20,7 +21,7 @@ public:
 public:
     const bn::dmg_music_item& song;
     bn::string_view title;
-    bn::string_view license_str;
+    bn::array<bn::string_view, 4> description;
 };
 
 } // namespace cr

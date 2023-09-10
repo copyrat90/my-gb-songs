@@ -11,7 +11,12 @@ static constexpr SongInfo SONGS[(int)SongKind::TOTAL_COUNT] = {
     SongInfo{
         bn::dmg_music_items::hell_owo_rld,
         "hellOWOrld",
-        "CC-BY-4.0",
+        {
+            "First loop I wrote in FamiTracker years ago,",
+            "later converted into hUGETracker format.",
+            "Mostly inspired by Kitsune^2 - Naradno,",
+            "Pachelbel - Canon in D and few other songs.",
+        },
     },
 };
 
