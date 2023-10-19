@@ -4,6 +4,7 @@
 
 #include "bn_dmg_music_items_hell_owo_rld.h"
 #include "bn_dmg_music_items_puku_7.h"
+#include "bn_dmg_music_items_spooky_birthday.h"
 
 namespace cr
 {
@@ -27,6 +28,16 @@ static constexpr SongInfo SONGS[(int)SongKind::TOTAL_COUNT] = {
             "just to practice using Furnace Tracker.",
             "Original song also has PCM channels, but",
             "unfortunately, they're missing in this port.",
+        },
+    },
+    SongInfo{
+        bn::dmg_music_items::spooky_birthday,
+        "spooky birthday",
+        {
+            "Spooky birthday jingle for my",
+            "GBA Microjam '23 entry:",
+            "Light the candles on the halloween cake!",
+            "https://github.com/gbadev-org/microjam23",
         },
     },
 };

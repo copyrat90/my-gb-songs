@@ -7,6 +7,7 @@ enum class SongKind
 {
     hellOWOrld,
     puku_7,
+    spooky_birthday,
 
     TOTAL_COUNT
 };
