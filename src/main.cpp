@@ -25,6 +25,7 @@ void play_song(int song_index, bn::vector<bn::sprite_ptr, PLAYING_TEXT_SPR_CNT>&
 int main()
 {
     bn::core::init();
+    bn::dmg_music::set_master_volume(bn::dmg_music_master_volume::FULL);
 
     bn::sprite_text_generator text_gen_8x16(common::variable_8x16_sprite_font);
     bn::sprite_text_generator text_gen_8x8(common::variable_8x8_sprite_font);
